@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #000;
+
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+}
+
+nav ul li{
+    cursor: pointer;
+    
+}
+
+#tapbar{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#tapbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.conteudo{
+    width: 100%;
+    height: max-content;
+
+    background-color: #ddd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 100px;
+
+}
+
+#home{
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 90vh;
+    margin-bottom: 0;
+}
+
+#filtro{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    #start {
+    background: #fbae1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+
+    cursor: pointer;
+   }
+   
+   #start:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   #start:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+   .titulo{
+    font-size: 38pt;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dados{
+    width: 280px;
+    min-height: 300px;
+    height: max-content;
+
+    background-color: #fff;
+    
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 15px #000;
+
+    margin-top: 50px;
+
+
+    padding: 15px;
+
+}
+
+.dados-nomes{
+    width: 280px;
+    min-height: 100px;
+    height: max-content;
+
+    background-color: #fff;
+    
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 15px #000;
+
+    margin-top: 50px;
+
+  text-align: center;
+
+  padding: 15px;
+
+
+
+}
+.quantidade{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 20%;
+
+    font-size: 40pt;
+
+    color: #fbae1f;
+
+}
+.titulo-dados{
+    color: #000;
+
+    text-align: center;
+
+   font-size: 20pt;
+}
+/*Personagens*/
+
+
+#personagens-conteudo img{
+    width: 100px;
+}
+
+table{
+
+    width: 100%;
+    height: max-content;
+
+    margin-top: 10px;
+
+    font-size: 14pt;
+
+
+    line-height: 50px;
+}
+
+table td{
+    color: #fbae1f;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 16pt;
+
+    margin-top: 5px;
+}
+
+/*Planetas*/
+
+
+
+#planetas-conteudo img{
+    width: 100px;
+}
+
+/*Naves*/
+
+#naves-nomes{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    scroll-behavior: smooth;
+
+}
+
+#naves-nomes a{
+
+    margin-top: 30px;
+
+    font-size: 14pt;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 30px;
+
+    color: #fbae1f;
+
+    height: 30px;
+
+    cursor: pointer;
+}
+
+#naves-nomes a:hover{
+    background-color: #555;
+    border-radius: 5px;
+    color: #000;
+
+    transition: all 0.2s;
+
+    cursor: pointer;
+}
+ 
+ #naves-conteudo img{
+     width: 100px
+ }
+
+iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    display: none;
+
+}
+
+@media (min-width:1000px){
+    #tapbar{
+        display: none;
+    }
+    
+    nav{
+        background-color: #000;
+    
+        position: fixed;
+        left: 0;
+
+        height: 100vh;
+        width: 200px;
+
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .credits{
+        color: #fff;
+        margin: 0px;
+        line-height: 5px;
+    }
+    nav p a{
+        color: #fbae1f;
+        margin-left: 5px;
+    }
+   
+    nav ul p{
+        color: #fff;
+        margin-bottom: 35px;
+        cursor: pointer;
+
+
+    }
+    
+    #logo{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    #filtro{
+        height: 100vh;
+    }
+    
+    .conteudo{
+        min-height: 100vh;
+        height: max-content;
+        width: 100%;
+        
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        
+        
+        
+    }
+    
+    #home{
+        height: 100vh;
+        background-position: bottom;
+
+    }
+    .dados{
+        width: 500px;
+    }
+
+    .dados-nomes{
+        width: 500px;
+    }
+
+    
+}

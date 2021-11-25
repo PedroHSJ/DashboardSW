@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+
+
+
+    <title>Star Wars</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li onclick="MostrarHome()" id="logo"><img src="assets/logo.png" alt=""></li>
+            <li onclick="MostrarHome()"><img src="assets/dashboard.svg" alt=""></li>
+            <p>Home</p>
+            <li onclick="MostrarPersonagem()"><img src="assets/personagens.svg" alt=""></li>
+            <p>Characters</p>
+            <li onclick="MostrarPlanetas()"><img src="assets/planetas.svg" alt=""></li>
+            <p>Planets</p>
+            <li onclick="MostrarNaves()"><img src="assets/nave.svg" alt=""></li>
+            <p>Vehicles</p>
+        </ul>
+        <p class="credits">Credits API: <a href="https://swapi.dev/" target="_blank">swapi.dev</a></p><br>
+        <p class="credits">Developed by: <a href="https://www.linkedin.com/in/pedro-henrique-352752212/" target="_blank">Pedro H.</a></p>
+    </nav>
+
+    <nav id="tapbar">
+        <ul>
+            <li onclick="MostrarHome()"><img src="assets/dashboard.svg" alt=""></li>
+            <li onclick="MostrarPersonagem()"><img src="assets/personagens.svg" alt=""></li>
+            <li onclick="MostrarPlanetas()"><img src="assets/planetas.svg" alt=""></li>
+            <li onclick="MostrarNaves()"><img src="assets/nave.svg" alt=""></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="">
+        <div id="filtro">
+
+            <button onclick="MostrarPersonagem()" id="start"> Get Started
+            </button>
+
+        </div>
+    </section>
+
+    <section id="personagem" class="conteudo" >
+        <h1 class="titulo">Characters</h1>
+
+        <div id="personagens-conteudo" class="dados">
+                
+            <h2 class="titulo-dados">Length</h2>
+                
+            
+
+            </div>
+
+            <div id="personagens-nomes" class="dados-nomes">
+                
+                <table>
+                    <thead>
+                        <th>Name</th> 
+                        <th>Height</th>
+                        <th>Birth year</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="nome1" ></td>
+                            <td id="alt1"></td>
+                            <td id="nasc1"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="nome2" ></td>
+                            <td id="alt2"></td>
+                            <td id="nasc2"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="nome3"></td>
+                            <td id="alt3"></td>
+                            <td id="nasc3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+    </section>
+
+    <section id="planetas" class="conteudo">
+        <h1 class="titulo">Planets</h1>
+
+        <div id="planetas-conteudo" class="dados">
+            
+            <h2 class="titulo-dados">Length</h2>
+            
+        
+        </div>
+
+        <div class="dados-nomes">
+            
+            <h2 class="titulo-dados" id="nome-planeta1"></h2>
+            <h3>Info</h3>
+            <table>
+                <thead>
+                    
+                    <th>Climate</th> 
+                    <th>Terrain</th> 
+                    <th>Diameter</th> 
+                                        
+                        
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="planet1clima" ></td>
+                        <td id="planet1ter" ></td>
+                        <td id="planet1diam" ></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="dados-nomes">
+            
+            <h2 class="titulo-dados" id="nome-planeta2"></h2>
+            <h3>Info</h3>
+
+            <table>
+                <thead>
+                    <th>Climate</th> 
+                    <th>Terrain</th> 
+                    <th>Diameter</th>                     
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="planet2clima" ></td>
+                        <td id="planet2ter" ></td>
+                        <td id="planet2diam" ></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="dados-nomes">
+            
+            <h2 class="titulo-dados" id="nome-planeta3"></h2>
+            <h3>Info</h3>
+
+            <table>
+                <thead>
+                    <th>Climate</th> 
+                    <th>Terrain</th> 
+                    <th>Diameter</th>                     
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="planet3clima" ></td>
+                        <td id="planet3ter" ></td>
+                        <td id="planet3diam" ></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+    <section id="naves" class="conteudo">
+        
+        <h1 class="titulo">Vehicles</h1>
+
+        <div id="naves-conteudo" class="dados">
+            
+            <h2 class="titulo-dados">Length</h2>
+        
+        </div>
+
+        <div id="naves-nomes" class="dados">
+
+            <h2 class="titulo-dados">Names</h2>
+
+            <a id="nave1" href="https://www.youtube.com/embed/m-FzgTtFnHk" target="_blank">
+                
+            </a>
+            <a id="nave2" href="https://www.youtube.com/embed/RFOySvEkQc4" target="_blank">
+            
+            </a>
+            <a id="nave3" href="https://www.youtube.com/embed/1Z9CzUgomdE" target="_blank">
+            
+            </a>
+            <a id="nave4" href="https://www.youtube.com/embed/3SHp96pOCzA" target="_blank">
+            
+            </a>
+    
+        </div>
+
+    </section>      
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="swapi.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
