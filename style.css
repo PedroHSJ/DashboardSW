@@ -97,6 +97,7 @@ nav ul li{
 
     cursor: pointer;
     text-decoration: none;
+    color: #000;
    }
    
    #start:hover {
