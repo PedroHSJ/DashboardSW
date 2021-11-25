@@ -62,16 +62,15 @@ window.onload = () => {Promise.all([swapiGET('people'), swapiGET('planets'), swa
     NavesConteudo.getElementsByTagName('h2')[1].innerHTML = results[2].data.count;
 
     const Nome1 = document.getElementById('nome1').innerHTML = results[0].data.results[0].name;
-    const Altura1 = document.getElementById('alt1').innerHTML = results[0].data.results[0].height;
+    const Altura1 = document.getElementById('alt1').innerHTML = `${results[0].data.results[0].height} cm`;
     const Nasc1 = document.getElementById('nasc1').innerHTML = results[0].data.results[0].birth_year;
 
     const Nome2 = document.getElementById('nome2').innerHTML = results[0].data.results[3].name;
-    let Altura2 = document.getElementById('alt2').innerHTML = `${results[0].data.results[3].height} cm`;
-    Altura2.toLowerCase ;
+    const Altura2 = document.getElementById('alt2').innerHTML = `${results[0].data.results[3].height} cm`;
     const Nasc2 = document.getElementById('nasc2').innerHTML = results[0].data.results[3].birth_year;
 
     const Nome3 = document.getElementById('nome3').innerHTML = results[0].data.results[4].name;
-    const Altura3 = document.getElementById('alt3').innerHTML = results[0].data.results[4].height;
+    const Altura3 = document.getElementById('alt3').innerHTML = `${results[0].data.results[4].height} cm`;
     const Nasc3 = document.getElementById('nasc3').innerHTML = results[0].data.results[4].birth_year;
 
     const NomePlan1 = document.getElementById('nome-planeta1').innerHTML = results[1].data.results[0].name;
